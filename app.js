@@ -1,6 +1,6 @@
 const offerings=document.querySelector('.offerings');
 const categories=[...offerings.querySelectorAll('.category')];
-const symbols=['⌑','⌂','▤','⌘','♧'];
+const symbols=['⌑','⌂','▤','⌘','♧','₹'];
 const panel=document.createElement('section');panel.className='offering-panel';panel.id='offering-panel';panel.hidden=true;panel.setAttribute('role','region');panel.setAttribute('aria-labelledby','panel-title');
 panel.innerHTML='<div class="inline-heading"><div><p class="eyebrow" id="panel-number"></p><h3 id="panel-title"></h3></div><button type="button" class="panel-close" aria-label="Collapse offering details">−</button></div><div id="panel-body"></div>';
 offerings.after(panel);
