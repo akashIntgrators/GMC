@@ -11,3 +11,5 @@
 
 /* Project names and galleries appear only after selecting a map pin. */
 #project-selector{display:none}
+
+.project-detail{position:relative;padding-right:65px}.project-close{position:absolute;right:15px;top:15px;width:40px;height:40px;border:1px solid #b7c2a8;border-radius:50%;background:#f7f6ee;color:#32472d;font:26px/1 system-ui;cursor:pointer}.project-close:hover{background:#dfE5d4}@media(max-width:760px){.project-detail{padding-right:60px}.project-media{margin-right:-42px}}
