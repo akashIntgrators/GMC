@@ -1,20 +1,15 @@
-# Projects setup
+# Projects — static map
 
-Open admin.html to add/edit site names, latitude, longitude, status and media. Save each project, then download projects-data.js and replace that file in GitHub. Edits are in memory until exported. This is not authenticated admin or a live CMS. GitHub repository write permissions control publication. Do not store secrets or private construction-site details in this public data file.
+No Google Maps key, billing, map ID or runtime map request is needed. The map PNG ships with the website. The only external requests are media URLs explicitly added by the editor.
 
-Add JPG/WebP photographs and MP4/WebM video files under assets/ (or use direct HTTPS media URLs). Enter one item per line: image | assets/site/photo.webp | caption. Keep clips compressed for mobile. Each project can contain multiple media items. The media tray scrolls horizontally and video has playback controls; nothing autoplays.
+Open admin.html, enter project names, latitude/longitude and media, save each project to the working list, then export projects-data.js. Replace that file in GitHub and upload local media under assets/. The editor is not a signed-in CMS; unpublished edits live only in the current tab until exported.
 
-Without a key: the section shows clearly labelled sample project selectors, not a real or geographically accurate map. Replace sample sites and sample imagery before publication.
+Pins use Web Mercator interpolation over documented image bounds: north 13.12, south 12.83, west 77.42, east 77.73. The original map's bounds are rounded, so pin placement is approximate and must be visually checked against known landmarks before using real sites. Not for navigation/survey. The map is from 2021 and may be outdated. Outside/invalid coordinates are not clamped into the map; the project stays in the selector with an outside-map label. To expand coverage, replace the map and update bounds together. Keep image aspect ratio and never crop the map independently of its pins.
 
-To activate Google Maps later:
-1. Enable Maps JavaScript API in a billing-enabled Google Cloud project.
-2. Create a browser API key restricted to the Maps JavaScript API and your production website referrer, https://gmc.techiwithhelmet.com/*. Configure a separate local test restriction/key if needed. Browser keys are visible to visitors by design; never use an unrestricted key.
-3. Create a JavaScript map ID. DEMO_MAP_ID is testing-only.
-4. Enter key and map ID in editor and export projects-data.js.
-5. Upload the new JS files, data, HTML/CSS and media to the GMC repository. Test map loading, all pins, media playback and mobile scrolling.
+Each pin and project-list button opens the same horizontal media tray. Images and direct video files are supported. Details remain hidden until selection. Replace sample projects and illustrative media before publishing.
 
-Reference: https://developers.google.com/maps/documentation/javascript/advanced-markers/start
-
-A real signed-in admin saving instantly for every visitor needs a backend/CMS and access control. It is not provided by static GitHub Pages. Current editor deliberately requires a reviewed GitHub commit to publish.
-
-Implementation verification: source syntax checked; no live Google Maps key or API test performed. Sample media is proposal illustration; real project videos are pending.
+## Attribution
+Map: OpenStreetMap, uploaded/recentered by BanyanTea via Wikimedia Commons, 2021. PNG raster rendition of the original SVG. Base artwork unmodified; interactive project pins are a separate HTML overlay. Map asset and any adaptations supplied under CC BY-SA 2.0. Preserve visible attribution and license links.
+Source: https://commons.wikimedia.org/wiki/File:India_Karnataka_Bangalore_Bengaluru_location_Map.svg
+License: https://creativecommons.org/licenses/by-sa/2.0/
+Data attribution: https://www.openstreetmap.org/copyright
