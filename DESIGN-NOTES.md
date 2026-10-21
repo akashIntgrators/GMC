@@ -26,3 +26,6 @@ First approve mobile price block, expandable hierarchy, allowance/exclusion lang
 
 ## Latest interaction revision
 Compact icon-and-label tiles replace the larger cards. Selecting a category reveals an inline panel below the horizontal row; no popup, overlay or bottom sheet. Clicking the selected tile or collapse control hides it. Selecting another category switches the panel content. Descriptions and legends removed from the selector to reduce visual copy. Nested specifications are retained inside the panel. JavaScript syntax verified; latest layout needs visual review.
+
+## Lean opening revision — 21 October 2026
+Removed large villa hero and repeated promotional text. Combined the price, area/GST qualification and offering selector into one opening section. All specifications remain behind click-to-reveal tiles. Contact design remains provisional.
