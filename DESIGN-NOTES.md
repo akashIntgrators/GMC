@@ -29,3 +29,6 @@ Compact icon-and-label tiles replace the larger cards. Selecting a category reve
 
 ## Lean opening revision — 21 October 2026
 Removed large villa hero and repeated promotional text. Combined the price, area/GST qualification and offering selector into one opening section. All specifications remain behind click-to-reveal tiles. Contact design remains provisional.
+
+## Contact revision — 21 October
+Removed next-step process and enquiry form. Added compact dark conversation panel with optional topic chips, editable WhatsApp message handoff and phone link. No visitor details collected on website; no submitted-lead claim. Footer retained for business identity, privacy and analytics preferences.
